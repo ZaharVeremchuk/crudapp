@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4"><%= @user.username %></h1>
+    <p class="lead">
+      Email: <%= @user.email %>
+      Password: <%= @user.password %>
+    </p>
+    <p>
+      <%= link_to "Edit this user", edit_user_path(@user), class: "bi bi-pencil btn btn-secondary" %>
+      <%= link_to "Back to users", users_path, class: "bi bi-table btn btn-secondary" %>
+      <%= button_to "Destroy this user",@user, method: :delete, class: "bi bi-trash btn btn-secondary" %>
+    </p>
+  </div>
+  <div>
+  </div>
+</div>

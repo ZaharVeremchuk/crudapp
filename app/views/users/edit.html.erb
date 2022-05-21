@@ -1,0 +1,8 @@
+<h1 class="text-center">Editing user</h1>
+<br/>
+<%= render "form", user: @user %>
+<br/>
+<div class="container">
+  <%= link_to "Show this user", @user, class: "bi bi-person btn btn-secondary" %> |
+  <%= link_to "Back to users", users_path, class: "bi bi-table btn btn-secondary" %>
+</div>
